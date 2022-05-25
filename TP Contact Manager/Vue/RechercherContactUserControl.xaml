@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="Vue.RechercherContactUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Vue"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="640">
+    <Grid Background="White">
+        <DataGrid x:Name="ContactsDataGrid" HorizontalAlignment="Left" Height="264" Margin="16,80,0,0" VerticalAlignment="Top" Width="600" SelectionChanged="ContactsDataGrid_SelectionChanged"/>
+        <Label Content="Liste des contacts" HorizontalAlignment="Left" Margin="221,10,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="CritereTextBox" HorizontalAlignment="Left" Height="23" Margin="131,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" Foreground="Black" BorderBrush="#FF0CB6F4" TextChanged="CritereTextBox_TextChanged"/>
+        <Button x:Name="RechercherButton" Content="Rechercher" HorizontalAlignment="Left" Margin="210,50,0,0" VerticalAlignment="Top" Width="86" Height="21" Click="RechercherButton_Click" Background="#FF0275D8" Foreground="White" FontWeight="Bold"/>
+        <ComboBox x:Name="CritereComboBox" HorizontalAlignment="Left" Margin="65,49,0,0" VerticalAlignment="Top" Width="61">
+            <ComboBoxItem Content="Nom"/>
+            <ComboBoxItem Content="Groupe"/>
+            <ComboBoxItem Content="Email"/>
+            <ComboBoxItem Content="Telephone"/>
+            <ComboBoxItem Content="Adresse"/>
+            <ComboBoxItem Content="Prenom"/>
+        </ComboBox>
+        <Label Content="Critère" HorizontalAlignment="Left" Margin="16,49,0,0" VerticalAlignment="Top" Width="44"/>
+        <Button x:Name="ModifierButton" Content="Modifier" HorizontalAlignment="Left" Margin="472,49,0,0" VerticalAlignment="Top" Width="64" FontWeight="Bold" Background="#FF0275D8" Foreground="White" FontSize="14" Click="ModifierButton_Click"/>
+        <Button x:Name="SupprimerButton" Content="Supprimer" HorizontalAlignment="Left" Margin="541,49,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" Background="#FF0275D8" Foreground="White" FontSize="14" Click="SupprimerButton_Click"/>
+        <Button Name="FavoriButton" Content="Favori" HorizontalAlignment="Left" Margin="415,50,0,0" VerticalAlignment="Top" Width="52" Height="21" FontWeight="Bold" Background="#FF0275D8" Foreground="White" Click="FavoriButton_Click"/>
+
+    </Grid>
+</UserControl>

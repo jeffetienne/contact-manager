@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="Vue.FavorisUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Vue"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="600">
+    <Grid Background="White">
+        <DataGrid x:Name="FavorisDataGrid" HorizontalAlignment="Left" Height="279" Margin="33,72,0,0" VerticalAlignment="Top" Width="534"/>
+        <Label Content="Liste des contacts favoris" HorizontalAlignment="Left" Margin="216,10,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16" FontWeight="Bold"/>
+        <Button x:Name="EnleverButton" Content="Enlever" HorizontalAlignment="Left" Margin="492,45,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" Background="#FF0275D8" Foreground="White" FontSize="14" Click="EnleverButton_Click"/>
+
+    </Grid>
+</UserControl>

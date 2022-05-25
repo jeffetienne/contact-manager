@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="Vue.AjouterContactUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Vue"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="640">
+    <Grid Background="White">
+        <Label Content="Ajouter un contact" HorizontalAlignment="Left" Margin="202,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.94" FontWeight="Bold" FontFamily="Times New Roman" FontSize="18"/>
+        <Label Content="Nom" HorizontalAlignment="Left" Margin="134,63,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.344,0.453" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="NomTextBox" HorizontalAlignment="Left" Height="23" Margin="203,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" BorderBrush="#FF14AAED" LostFocus="NomTextBox_LostFocus"/>
+        <Label Content="Prénom" HorizontalAlignment="Left" Margin="116,102,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.219,0.172" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="PrenomTextBox" HorizontalAlignment="Left" Height="23" Margin="203,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" BorderBrush="#FF14AAED" LostFocus="PrenomTextBox_LostFocus"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="131,192,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.031,-0.016" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="EmailTextBox" HorizontalAlignment="Left" Height="23" Margin="203,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" BorderBrush="#FF14AAED" LostFocus="EmailTextBox_LostFocus"/>
+        <Label Content="Téléphone" HorizontalAlignment="Left" Margin="99,234,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.344,0.219" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="TelephoneTextBox" HorizontalAlignment="Left" Height="23" Margin="203,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" BorderBrush="#FF14AAED" LostFocus="TelephoneTextBox_LostFocus"/>
+        <Label Content="Adresse" HorizontalAlignment="Left" Margin="117,272,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.352,0.5" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="AdresseTextBox" HorizontalAlignment="Left" Height="23" Margin="203,272,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" BorderBrush="#FF14AAED"/>
+        <Button x:Name="SauvegarderContactButton" Content="Sauvegarder" HorizontalAlignment="Left" Margin="107,317,0,0" VerticalAlignment="Top" Width="315" Click="SauvegarderContactButton_Click" Height="25" FontWeight="Bold" Background="#FF0275D8" Foreground="White"/>
+        <Label Content="Groupe" HorizontalAlignment="Left" Margin="119,148,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.031,-0.016" FontWeight="Bold" FontSize="14"/>
+        <ComboBox x:Name="GroupeComboBox" HorizontalAlignment="Left" Margin="202,146,0,0" VerticalAlignment="Top" Width="220" BorderBrush="#FF14AAED"/>
+        <Label x:Name="NomValidationLabel" Content="" HorizontalAlignment="Left" Margin="428,63,0,0" VerticalAlignment="Top" Width="162" Foreground="Red" FontFamily="Times New Roman" FontWeight="Bold"/>
+        <Label x:Name="PrenomValidationLabel" Content="" HorizontalAlignment="Left" Margin="428,102,0,0" VerticalAlignment="Top" Width="162" Foreground="Red" FontFamily="Times New Roman" FontWeight="Bold"/>
+        <Label x:Name="TelephoneValidationLabel" Content="" HorizontalAlignment="Left" Margin="428,234,0,0" VerticalAlignment="Top" Width="162" Foreground="Red" FontFamily="Times New Roman" FontWeight="Bold" Height="61"/>
+        <Label x:Name="EmailValidationLabel" Content="" HorizontalAlignment="Left" Margin="428,191,0,0" VerticalAlignment="Top" Width="162" Foreground="Red" FontFamily="Times New Roman" FontWeight="Bold"/>
+    </Grid>
+</UserControl>

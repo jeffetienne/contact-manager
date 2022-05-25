@@ -1,0 +1,26 @@
+﻿<Window x:Class="Vue.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Vue"
+        mc:Ignorable="d"
+        Title="Login" Height="270.389" Width="371.728" FontFamily="Times New Roman" FontSize="14" FontWeight="Bold">
+    <Grid HorizontalAlignment="Left" Margin="0,0,0,-0.2" Width="362">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="115*"/>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="31*"/>
+            <ColumnDefinition Width="17*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Identifiez-vous" HorizontalAlignment="Left" Margin="125,23,0,0" VerticalAlignment="Top" Width="119" FontFamily="Times New Roman" FontSize="16" FontWeight="Bold" Height="29" Grid.ColumnSpan="2"/>
+        <Label Content="Identifiant" HorizontalAlignment="Left" Margin="81,72,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" FontWeight="Bold" Height="26" Width="74"/>
+        <Label Content="Mot de passe" HorizontalAlignment="Left" Margin="67,112,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" FontWeight="Bold" Height="26" Width="88"/>
+        <TextBox x:Name="IdentifiantTextBox" HorizontalAlignment="Left" Height="23" Margin="176,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="3" BorderBrush="#FF06A5F7" Text=""/>
+        <Button x:Name="ConnecterButton" Content="Se Connecter" HorizontalAlignment="Left" Margin="67,156,0,0" VerticalAlignment="Top" Width="229" Height="27" FontFamily="Times New Roman" FontSize="16" FontWeight="Bold" Click="ConnecterButton_Click" Grid.ColumnSpan="3" BorderBrush="#FF0BC7F6" Background="#FF0275D8" Foreground="White"/>
+        <TextBox x:Name="ErrorLogin" HorizontalAlignment="Left" Height="23" Margin="67,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="229" FontStyle="Italic" Background="White" BorderBrush="White" Foreground="Red" Grid.ColumnSpan="3"/>
+        <PasswordBox x:Name="MotDePasseTextBox" HorizontalAlignment="Left" Margin="176,116,0,0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="3" Height="22" BorderBrush="#FF06A5F7" Password=""/>
+
+    </Grid>
+</Window>

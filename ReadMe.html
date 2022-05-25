@@ -1,0 +1,109 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="ReadMe_files/filelist.xml">
+<title>TP Gestion de contact</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="country-region"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="PostalCode"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="State"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="City"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="place"/>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h1>TP Gestion de contact</h1>
+
+
+<p class=paragraph>Ce TP consiste en la realisation d'un programme de gestion de contacts. </p>
+
+<p class=paragraph><o:p>&nbsp;</o:p></p>
+
+<h2><span style='mso-bidi-font-size:14.0pt'>Preparation des outils<o:p></o:p></span></h2>
+
+
+<p class=paragraph style='margin-left:.5in;text-indent:-.25in;mso-list:l12 level1 lfo11;
+tab-stops:list .5in'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Copier le contenu du fichier d05-e21-juillet-groupe1-script-db.sql.</p>
+
+<p class=paragraph style='margin-left:.5in;text-indent:-.25in;mso-list:l12 level1 lfo11;
+tab-stops:list .5in'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Ouvrir Sql Server Management Studio et cliquer sur nouvelle requete.</p>
+
+<p class=paragraph style='margin-left:.5in;text-indent:-.25in;mso-list:l12 level1 lfo11;
+tab-stops:list .5in'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Coller le contenu.</p>
+
+<p class=paragraph style='margin-left:.5in;text-indent:-.25in;mso-list:l12 level1 lfo11;
+tab-stops:list .5in'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Lancer la requete pour creer la base de donnees avec toutes les tables.</p>
+
+<p class=paragraph style='margin-left:.5in;text-indent:-.25in;mso-list:l12 level1 lfo11;
+tab-stops:list .5in'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Ajouter une ligne dans la table Usagers, que vous utiliserez pour vous authentifier sur l'application. Mettre 2 dans la colonne role pour etre gestionnaire, 3 pour administrateur et 1 pour un simple utilisateur.</p>
+
+<p class=paragraph style='margin-left:.5in;text-indent:-.25in;mso-list:l12 level1 lfo11;
+tab-stops:list .5in'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Changer la chaine de connexion dans le fichier App.config de la couche Vue, pour ajouter le nom de votre server.</p>
+
+<p class=paragraph>Vous pouvez maintenant lancer le programme. </p>
+
+<h2><span style='mso-bidi-font-size:14.0pt'>Utilisation<o:p></o:p></span></h2>
+
+<h3><span style='mso-bidi-font-size:14.0pt'>Login<o:p></o:p></span></h3>
+<p class=paragraph>Vous devez vous authentifier pour acceder aux fonctionalites. Saisir l'identifiant et le mot de passe saisis dans la table Usagers.</p>
+<img src="Login.png" alt="Login" width="370" height="270">
+
+<h3><span style='mso-bidi-font-size:14.0pt'>Ajouter un Contact<o:p></o:p></span></h3>
+<p class=paragraph>Saisir les information sur le contact, sachant que le couple nom et prenom doit etre unique, l'email et le telephone doivent etre uniques. Le telephone doit etre dans le format (000)000-0000.</p>
+<img src="AjouterContact.png" alt="AjouterContact" width="800" height="400">
+
+<h3><span style='mso-bidi-font-size:14.0pt'>Rechercher des Contacts<o:p></o:p></span></h3>
+<p class=paragraph>Choisir le critere de recherche dans le combobox puis saisir la valeur dans le textbox. Avant de faire une operation sur un contact (Modifier, supprimer ou ajouter aux favoris), vous devez selectionner la ligne correspondant a ce contact.</p>
+<img src="RechercherContacts.png" alt="RechercherContact" width="800" height="400">
+
+<h3><span style='mso-bidi-font-size:14.0pt'>Envoyer un message<o:p></o:p></span></h3>
+<p class=paragraph>Saisir le prenom du contact dans le champ de recherche. Puis saisir le contenu du message a envoyer.</p>
+<img src="EnvoyerMessage.png" alt="EnvoyerMessage" width="800" height="400">
+
+<h3><span style='mso-bidi-font-size:14.0pt'>Gestions des usagers<o:p></o:p></span></h3>
+<p class=paragraph>Si vous avez les droits Administrateur ou Gestionnaire, vous aurez acces a la gestion des usagers.</p>
+<img src="Administration.png" alt="Administration" width="800" height="400">
+
+<h3><span style='mso-bidi-font-size:14.0pt'>Ajouter des usagers<o:p></o:p></span></h3>
+<p class=paragraph>Cliquer sur le bouton ajouter pour ajouter un nouvel usager. Puis saisir les informations, sachant que l'identifiant doit etre unique.</p>
+<img src="AjouterUsager.png" alt="AjouterUsager" width="800" height="400">
+
+</div>
+
+</body>
+
+</html>

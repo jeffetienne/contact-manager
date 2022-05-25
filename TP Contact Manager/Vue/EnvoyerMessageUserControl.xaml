@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="Vue.EnvoyerMessageUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Vue"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="600">
+    <Grid Background="White">
+        <Label Content="Contact" HorizontalAlignment="Left" Margin="57,62,0,0" VerticalAlignment="Top" Width="65" FontWeight="Bold" FontSize="14"/>
+        <ComboBox Name="ContactComboBox" HorizontalAlignment="Left" Margin="146,65,0,0" VerticalAlignment="Top" Width="114" SelectionChanged="ContactComboBox_SelectionChanged"/>
+        <TextBox Name="CritereTextBox" HorizontalAlignment="Left" Height="23" Margin="335,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="114" BorderBrush="#FF0FDDD2"/>
+        <Button Name="RechercherButton" Background="#0275D8" Content="Rechercher" HorizontalAlignment="Left" Margin="454,65,0,0" VerticalAlignment="Top" Width="80" FontWeight="Bold" FontSize="14" Foreground="White" Height="26" Click="RechercherButton_Click"/>
+        <Label Content="Contenu" HorizontalAlignment="Left" Margin="55,110,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <Label Name="TitreLabel" Content="Envoyer un message" HorizontalAlignment="Left" Margin="165,10,0,0" VerticalAlignment="Top" Width="326" FontWeight="Bold" FontFamily="Times New Roman" FontSize="18"/>
+        <Button Background="#0275D8" Name="EnvoyerButton" Content="Envoyer" HorizontalAlignment="Left" Margin="57,325,0,0" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.45,-0.128" Foreground="White" FontWeight="Bold" FontSize="14" Height="26" Click="EnvoyerButton_Click"/>
+        <TextBox Name="ContenuTextBox" HorizontalAlignment="Left" Height="166" Margin="57,144,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="477"  BorderBrush="#FF14AAED"/>
+    </Grid>
+</UserControl>
